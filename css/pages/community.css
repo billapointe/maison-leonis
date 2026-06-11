@@ -1691,24 +1691,19 @@
   grid-row: 1;
 }
 
-/* Rangée 2 : 4 cartes, centrées sur toute la largeur (2 cols chacune) */
+/* Rangée 2 : 3 cartes (2 cols chacune), centrées dans la grille */
 .offer__item:nth-child(4) {
-  grid-column: 1 / span 2;
+  grid-column: 2 / span 2;
   grid-row: 2;
 }
 
 .offer__item:nth-child(5) {
-  grid-column: 3 / span 2;
+  grid-column: 4 / span 2;
   grid-row: 2;
 }
 
 .offer__item:nth-child(6) {
-  grid-column: 5 / span 2;
-  grid-row: 2;
-}
-
-.offer__item:nth-child(7) {
-  grid-column: 7 / span 2;
+  grid-column: 6 / span 2;
   grid-row: 2;
 }
 
@@ -2058,7 +2053,7 @@
 }
 
 /* ============================================
-   Section « Tarifs » — lancement + 2 cartes
+   Section inscription — accès gratuit
    ============================================ */
 
 .pricing {
@@ -2136,6 +2131,12 @@
   align-items: stretch;
   gap: var(--space-xl);
   grid-template-columns: 1fr 1fr;
+}
+
+.pricing__grid--single {
+  max-width: 28rem;
+  margin: 0 auto;
+  grid-template-columns: 1fr;
 }
 
 .pricing-card {
