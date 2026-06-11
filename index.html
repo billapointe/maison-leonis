@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta
+    name="description"
+    content="Leonis — Girl, tu es the main character. La vie est trop courte pour ne pas la bâtir à ton image."
+  />
+  <title>Girl, tu es the main character — Leonis</title>
+  <link rel="icon" href="Images/rondetoile.svg" type="image/svg+xml" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Luxurious+Script&display=swap"
+    rel="stylesheet"
+  />
+  <link href="https://fonts.cdnfonts.com/css/aileron" rel="stylesheet" />
+
+  <link rel="preload" as="image" href="Images/jess.jpg" />
+  <link rel="preload" as="image" href="Images/titrehero.png" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/nav-footer.css" />
+  <link rel="stylesheet" href="css/pages/home.css" />
+</head>
+<body class="page-home">
+
+  <header class="site-header">
+    <a class="site-logo" href="index.html">Leonis</a>
+    <button
+      class="nav-toggle"
+      type="button"
+      aria-expanded="false"
+      aria-controls="site-nav"
+      aria-label="Ouvrir le menu"
+    >
+      <span class="nav-toggle__bars" aria-hidden="true">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </span>
+    </button>
+  </header>
+
+  <div class="nav-overlay" id="site-nav" aria-hidden="true">
+    <div class="nav-popup" role="dialog" aria-modal="true" aria-label="Menu principal">
+      <nav class="nav-popup__nav" aria-label="Navigation principale">
+        <ul class="nav-popup__list">
+          <li class="nav-popup__item">
+            <a class="nav-popup__link nav-popup__link--active" href="index.html" aria-current="page">Accueil</a>
+          </li>
+          <li class="nav-popup__item">
+            <a class="nav-popup__link" href="#a-propos">À propos</a>
+          </li>
+          <li class="nav-popup__item">
+            <a class="nav-popup__link" href="community.html">Communauté</a>
+          </li>
+          <li class="nav-popup__item">
+            <a class="nav-popup__link" href="#services">Services</a>
+          </li>
+          <li class="nav-popup__item">
+            <a class="nav-popup__link" href="#boutique">Boutique</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <main>
+    <section class="hero hero--sticker" aria-labelledby="hero-sticker-title">
+      <div class="hero__panels" aria-hidden="true">
+
+        <div class="hero__carousel">
+          <div class="hero__panel">
+            <img
+              class="hero__panel-img hero__panel-img--val"
+              src="Images/valfond.JPG"
+              alt=""
+              width="800"
+              height="1000"
+            />
+          </div>
+          <div class="hero__panel">
+            <img
+              class="hero__panel-img is-active"
+              src="Images/jessfond.jpg"
+              alt=""
+              width="800"
+              height="1000"
+            />
+          </div>
+      
+          <div class="hero__panel">
+            <img
+              class="hero__panel-img hero__panel-img--billie"
+              src="Images/billiefond2.JPG"
+              alt=""
+              width="800"
+              height="1000"
+            />
+          </div>
+          <div class="hero__carousel-dots">
+            <button type="button" class="hero__carousel-dot is-active" aria-label="Photo 1 sur 3"></button>
+            <button type="button" class="hero__carousel-dot" aria-label="Photo 2 sur 3"></button>
+            <button type="button" class="hero__carousel-dot" aria-label="Photo 3 sur 3"></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__inner hero__inner--sticker">
+        <div class="hero-sticker">
+          <h1 class="hero-sticker__title" id="hero-sticker-title">
+            <img
+              class="hero-sticker__title-img"
+              src="Images/titrehero.png"
+              alt="Girl, tu es the main character — La vie est trop courte pour ne pas la bâtir à ton image"
+              width="800"
+              height="400"
+            />
+          </h1>
+
+          <a class="hero-sticker__btn" href="#services">Découvre nos services</a>
+        </div>
+      </div>
+    </section>
+    <section class="letter-section" aria-label="Une lettre pour toi">
+      <svg
+        class="letter-section__edge"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1492 75"
+        preserveAspectRatio="none"
+        aria-hidden="true"
+      >
+        <defs>
+          <path
+            id="letter-bump"
+            d="M 0 0 H 150 A 75 75 0 0 1 0 0 Z"
+          />
+        </defs>
+        <rect width="1492" height="3" fill="currentColor" />
+        <use href="#letter-bump" x="-122" fill="currentColor" />
+        <use href="#letter-bump" x="0" fill="currentColor" />
+        <use href="#letter-bump" x="122" fill="currentColor" />
+        <use href="#letter-bump" x="244" fill="currentColor" />
+        <use href="#letter-bump" x="366" fill="currentColor" />
+        <use href="#letter-bump" x="488" fill="currentColor" />
+        <use href="#letter-bump" x="610" fill="currentColor" />
+        <use href="#letter-bump" x="732" fill="currentColor" />
+        <use href="#letter-bump" x="854" fill="currentColor" />
+        <use href="#letter-bump" x="976" fill="currentColor" />
+        <use href="#letter-bump" x="1098" fill="currentColor" />
+        <use href="#letter-bump" x="1220" fill="currentColor" />
+        <use href="#letter-bump" x="1342" fill="currentColor" />
+        <use href="#letter-bump" x="1464" fill="currentColor" />
+      </svg>
+
+      <article class="letter-inner">
+        <p class="letter-opening">La plupart des femmes ambitieuses font exactement ce qu'on leur a dit de faire.</p>
+        <div class="letter-body">
+          <p class="letter-text">Elles travaillent fort. Elles sacrifient. Elles attendent que ça « paye ». Elles continuent de pousser, de pivoter, de trouver de nouvelles stratégies…</p>
+          <p class="letter-text">Puis un jour elles s'épuisent.<br />
+          Pas parce qu'elles n'ont pas ce qu'il faut pour réussir, mais parce qu'elles suivent une façon de faire qui n'a jamais été pensée pour elles — ni pour leur vie, ni pour leur business.</p>
+          <p class="letter-text letter-text--emphasis">We see you 👀</p>
+          <p class="letter-text">On s'est longtemps senties comme ça aussi. Prisonnières des stratégies one-size fits all, des conseils contradictoires, des « I should », sans vraiment comprendre pourquoi ça ne marchait pas. C'était avant de changer d'approche et de commencer à construire une vie et une entreprise qui nous ressemble vraiment.</p>
+          <p class="letter-text">La bonne nouvelle? Tu n'as plus à deviner.</p>
+        </div>
+        <a class="letter-cta" href="quiz.html">Découvre ce qui te correspond</a>
+      </article>
+    </section>
+
+    <section class="approach-section" aria-labelledby="approach-title">
+      <article class="approach-card">
+        <img
+          class="approach-card__bg"
+          src="Images/fondflash.svg"
+          alt=""
+          width="960"
+          height="540"
+          aria-hidden="true"
+        />
+        <div class="approach-card__content">
+          <h2 class="approach-title" id="approach-title">Notre Approche</h2>
+          <div class="approach-body">
+            <p class="approach-text approach-text--lead">
+              Nous accompagnons les femmes ambitieuses dans leur expansion, qu'elle soit personnelle, professionnelle ou entrepreneuriale. Parce qu'une croissance durable ne repose pas uniquement sur une marque forte ou une stratégie performante.
+            </p>
+            <p class="approach-text">
+              Elle repose sur une identité solide, une vision claire et des décisions alignées avec la personne que tu es en train de devenir.
+            </p>
+            <p class="approach-text">
+              C'est là qu'entre l'astrologie, non pas comme outil de prédiction, mais comme système de connaissance de soi. Un miroir qui te permet de comprendre ta nature profonde, tes cycles et ta façon unique de fonctionner, pour bâtir sur des fondations qui te ressemblent vraiment.
+            </p>
+            <p class="approach-text">
+              Notre rôle est ensuite de t'aider à structurer cette expansion : les systèmes, les automatisations et les stratégies qui font tourner ta vie et ton entreprise sans que tout repose sur ton effort constant.
+            </p>
+            <p class="approach-text approach-text--closing">
+              Car le véritable objectif n'est pas seulement d'avoir du succès. C'est de bâtir une vie, une entreprise et une identité capables de soutenir ce succès sur le long terme.
+            </p>
+          </div>
+
+          <div class="approach-pills" role="list" aria-label="Les trois piliers de notre approche">
+            <div class="approach-pill approach-pill--navy" role="listitem">
+              <span class="approach-pill__label">Identité solide</span>
+            </div>
+            <div class="approach-pill approach-pill--blush" role="listitem">
+              <span class="approach-pill__label">Stratégies personnalisées</span>
+            </div>
+            <div class="approach-pill approach-pill--lime" role="listitem">
+              <span class="approach-pill__label">Scale With Freedom</span>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="for-you-section" aria-labelledby="for-you-title">
+      <article class="for-you-inner">
+        <h2 class="for-you-title" id="for-you-title">C'est pour toi si...</h2>
+        <div class="for-you-body">
+          <p class="for-you-text">
+            Tu n'en peux plus de suivre des méthodes qui ne sont pas adaptées à ton énergie ou à tes projets, d'écouter les conseils de gens qui n'ont pas la vie que tu veux, de respecter les normes qu'on t'a imposées, de t'arrêter face à tes propres peurs qui veulent te faire croire que c'est pas réaliste.
+          </p>
+          <p class="for-you-text">
+            Tu veux reprendre le volant. Devenir la seule et unique autorité sur ta vie, tes choix, ta façon de réussir.
+          </p>
+          <p class="for-you-text">
+            Tu veux te sentir VUE, et bâtir une vie qui te ressemble vraiment.
+          </p>
+          <p class="for-you-text">
+            Pas uniquement vivre pour atteindre des objectifs.
+          </p>
+          <p class="for-you-text for-you-text--closing">
+            Être présente, vivante, épanouie dans chaque moment qui mène jusqu'à eux.
+          </p>
+        </div>
+        <a class="for-you-cta" href="quiz.html">Je suis prête</a>
+      </article>
+    </section>
+
+    <section class="services-section" id="services" aria-labelledby="services-title">
+      <img
+        class="services-section__deco services-section__deco--top-left"
+        src="Images/formerose.svg"
+        alt=""
+        width="600"
+        height="600"
+        aria-hidden="true"
+      />
+      <img
+        class="services-section__deco services-section__deco--bottom-right"
+        src="Images/formerose.svg"
+        alt=""
+        width="600"
+        height="600"
+        aria-hidden="true"
+      />
+
+      <div class="services-inner">
+        <header class="services-header">
+          <h2 class="services-title" id="services-title">Here's how we can help</h2>
+          <p class="services-subtitle">
+            Nous avons plusieurs façons de t'accompagner vers tes objectifs, à ton rythme
+          </p>
+        </header>
+
+        <div class="services-grid" role="list" aria-label="Nos trois offres">
+          <article class="service-card" role="listitem">
+            <img
+              class="service-card__icon"
+              src="Images/rondetoile.svg"
+              alt=""
+              width="80"
+              height="80"
+              aria-hidden="true"
+            />
+            <h3 class="service-card__title">Outils Identitaires</h3>
+            <p class="service-card__desc">Workbooks, Livres, Oracles, etc.</p>
+            <a class="service-card__btn" href="#boutique">Je suis prête</a>
+          </article>
+
+          <article class="service-card" role="listitem">
+            <img
+              class="service-card__icon"
+              src="Images/rondcoeur.svg"
+              alt=""
+              width="80"
+              height="80"
+              aria-hidden="true"
+            />
+            <h3 class="service-card__title">Communauté professionnelle</h3>
+            <p class="service-card__desc">Formations, Réseautage, Stratégies, Podcast, etc.</p>
+            <a class="service-card__btn" href="community.html">Je suis prête</a>
+          </article>
+
+          <article class="service-card" role="listitem">
+            <img
+              class="service-card__icon"
+              src="Images/rondfleur.svg"
+              alt=""
+              width="80"
+              height="80"
+              aria-hidden="true"
+            />
+            <h3 class="service-card__title">Branding & Sites Web</h3>
+            <p class="service-card__desc">Stratégie de marque, identité visuelle, site webs, etc.</p>
+            <a class="service-card__btn" href="#services">Je suis prête</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="connect-section" id="connect" aria-labelledby="connect-title">
+      <div class="connect-inner">
+        <header class="connect-header">
+          <h2 class="connect-title" id="connect-title">Connect with us</h2>
+          <p class="connect-subtitle">En apprendre plus sur les femmes derrière la vision</p>
+          <p class="connect-scroll-hint" aria-hidden="true">Glisse pour découvrir →</p>
+        </header>
+
+        <div class="connect-grid" role="list" aria-label="Nos profils Instagram">
+          <a
+            class="ig-post"
+            role="listitem"
+            href="https://www.instagram.com/jessyannricard/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Voir le profil Instagram de Jess — @jessyannricard"
+          >
+            <div class="ig-post__header">
+              <img
+                class="ig-post__avatar"
+                src="Images/jess.jpg"
+                alt=""
+                width="32"
+                height="32"
+                loading="lazy"
+                decoding="async"
+              />
+              <div class="ig-post__meta">
+                <span class="ig-post__username">@jessyannricard</span>
+                <span class="ig-post__location">Jessy-Ann Ricard | Astrologie & Carrière</span>
+              </div>
+            </div>
+            <img
+              class="ig-post__image"
+              src="Images/jess.jpg"
+              alt="Jess, fondatrice de Maison Leonis."
+              width="1080"
+              height="1080"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="ig-post__footer">
+              <p class="ig-post__caption">
+                <strong class="ig-post__caption-user">@jessyannricard</strong>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <div class="ig-post__actions" aria-hidden="true">
+                <svg class="ig-post__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                </svg>
+                <svg class="ig-post__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+                </svg>
+                <svg class="ig-post__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+                  <path d="M17 1l4 4-4 4" />
+                  <path d="M3 11V9a4 4 0 0 1 4-4h14" />
+                  <path d="M7 23l-4-4 4-4" />
+                  <path d="M21 13v2a4 4 0 0 1-4 4H3" />
+                </svg>
+                <svg class="ig-post__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+                  <path d="M22 2L11 13" />
+                  <path d="M22 2l-7 20-4-9-9-4 20-7z" />
+                </svg>
+              </div>
+            </div>
+          </a>
+
+          <a
+            class="ig-post"
+            role="listitem"
+            href="https://www.instagram.com/valentine.marmorat/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Voir le profil Instagram de Val — @valentine.marmorat"
+          >
+            <div class="ig-post__header">
+              <img
+                class="ig-post__avatar"
+                src="Images/val.jpg"
+                alt=""
+                width="32"
+                height="32"
+                loading="lazy"
+                decoding="async"
+              />
+              <div class="ig-post__meta">
+                <span class="ig-post__username">@valentine.marmorat</span>
+                <span class="ig-post__location">VALENTINE | BUSINESS & MARKETING CONSULTING</span>
+              </div>
+            </div>
+            <img
+              class="ig-post__image"
+              src="Images/val.jpg"
+              alt="Val, co-fondatrice de Leonis Community."
+              width="1080"
+              height="1080"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="ig-post__footer">
+              <p class="ig-post__caption">
+                <strong class="ig-post__caption-user">@valentine.marmorat</strong>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <div class="ig-post__actions" aria-hidden="true">
+                <svg class="ig-post__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                </svg>
+                <svg class="ig-post__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+                </svg>
+                <svg class="ig-post__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+                  <path d="M17 1l4 4-4 4" />
+                  <path d="M3 11V9a4 4 0 0 1 4-4h14" />
+                  <path d="M7 23l-4-4 4-4" />
+                  <path d="M21 13v2a4 4 0 0 1-4 4H3" />
+                </svg>
+                <svg class="ig-post__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+                  <path d="M22 2L11 13" />
+                  <path d="M22 2l-7 20-4-9-9-4 20-7z" />
+                </svg>
+              </div>
+            </div>
+          </a>
+
+          <a
+            class="ig-post"
+            role="listitem"
+            href="https://www.instagram.com/dreambybillie/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Voir le profil Instagram de Billie — @billieapointe"
+          >
+            <div class="ig-post__header">
+              <img
+                class="ig-post__avatar"
+                src="Images/billie.png"
+                alt=""
+                width="32"
+                height="32"
+                loading="lazy"
+                decoding="async"
+              />
+              <div class="ig-post__meta">
+                <span class="ig-post__username">@dreambybillie</span>
+                <span class="ig-post__location">BILLIE | WEB DESIGNER 💻</span>
+              </div>
+            </div>
+            <img
+              class="ig-post__image ig-post__image--billie"
+              src="Images/billie.png"
+              alt="Billie, associée Maison Leonis."
+              width="1080"
+              height="1080"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="ig-post__footer">
+              <p class="ig-post__caption">
+                <strong class="ig-post__caption-user">@dreambybillie</strong>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <div class="ig-post__actions" aria-hidden="true">
+                <svg class="ig-post__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                </svg>
+                <svg class="ig-post__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+                </svg>
+                <svg class="ig-post__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+                  <path d="M17 1l4 4-4 4" />
+                  <path d="M3 11V9a4 4 0 0 1 4-4h14" />
+                  <path d="M7 23l-4-4 4-4" />
+                  <path d="M21 13v2a4 4 0 0 1-4 4H3" />
+                </svg>
+                <svg class="ig-post__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+                  <path d="M22 2L11 13" />
+                  <path d="M22 2l-7 20-4-9-9-4 20-7z" />
+                </svg>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__top">
+        <div class="site-footer__brand">
+          <a class="site-footer__logo" href="index.html">Leonis</a>
+          <p class="site-footer__tagline">
+            La vie est trop courte pour ne pas la bâtir à ton image.
+          </p>
+        </div>
+
+        <div class="site-footer__grid">
+          <nav class="site-footer__col site-footer__col--navigation" aria-label="Navigation du site">
+            <h2 class="site-footer__heading">Navigation</h2>
+            <ul class="site-footer__list">
+              <li><a class="site-footer__link" href="index.html">Accueil</a></li>
+              <li><a class="site-footer__link" href="#a-propos">À propos</a></li>
+              <li><a class="site-footer__link" href="community.html">Communauté</a></li>
+              <li><a class="site-footer__link" href="#services">Services</a></li>
+              <li><a class="site-footer__link" href="#boutique">Boutique</a></li>
+            </ul>
+          </nav>
+
+          <nav class="site-footer__col" aria-label="Ressources">
+            <h2 class="site-footer__heading">Ressources</h2>
+            <ul class="site-footer__list">
+              <li><a class="site-footer__link" href="quiz.html">Quiz</a></li>
+              <li><a class="site-footer__link" href="community.html#faq">FAQ</a></li>
+              <li><a class="site-footer__link" href="community.html#garantie">Garantie</a></li>
+              <li><a class="site-footer__link" href="#connect">Instagram</a></li>
+            </ul>
+          </nav>
+
+          <div class="site-footer__col">
+            <h2 class="site-footer__heading">Contact</h2>
+            <ul class="site-footer__list">
+              <li>
+                <a class="site-footer__link" href="mailto:hello@maisonleonis.com">
+                  hello@maisonleonis.com
+                </a>
+              </li>
+            </ul>
+
+            <ul class="site-footer__social" aria-label="Nos profils Instagram">
+              <li>
+                <a
+                  class="site-footer__social-link"
+                  href="https://www.instagram.com/jessyannricard/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram de Jess — @jessyannricard"
+                >
+                  <svg class="site-footer__social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="site-footer__social-link"
+                  href="https://www.instagram.com/valentine.marmorat/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram de Val — @valentine.marmorat"
+                >
+                  <svg class="site-footer__social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="site-footer__social-link"
+                  href="https://www.instagram.com/dreambybillie/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram de Billie — @dreambybillie"
+                >
+                  <svg class="site-footer__social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-footer__bottom">
+        <p class="site-footer__copy">© 2026 Leonis. Tous droits réservés.</p>
+        <nav class="site-footer__legal" aria-label="Liens légaux">
+          <ul class="site-footer__legal-list">
+            <li><a class="site-footer__legal-link" href="#">Politique de confidentialité</a></li>
+            <li><a class="site-footer__legal-link" href="#">Conditions d'utilisation</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="animation.js"></script>
+</body>
+</html>

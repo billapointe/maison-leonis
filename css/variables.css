@@ -1,0 +1,89 @@
+/* ============================================
+   variables.css — couleurs, typos, espacements
+   ============================================ */
+
+:root {
+  /* Palette officielle */
+  --color-lime: #d1fe01;
+  --color-navy: #031d7c;
+  --color-blue: #0c34c7;
+  --color-blush: #f5e4f6;
+  --color-pink: #ff53a9;
+  --color-crimson: #ac0324;
+
+  /* Sémantique */
+  --color-anchor-black: var(--color-navy);
+  --color-anchor-cream: var(--color-blush);
+  --color-ink: var(--color-navy);
+  --color-forest: var(--color-crimson);
+  --color-sage: var(--color-lime);
+  --color-lavender: var(--color-pink);
+  --color-lilac: var(--color-blush);
+  --color-cream: var(--color-blush);
+
+  /* Noto Serif Display (Google Fonts) — variante condensée via font-stretch */
+  --font-heading: "Noto Serif Display", Georgia, serif;
+  --font-heading-stretch: condensed;
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-logo: "Luxurious Script", cursive;
+
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+  --space-4xl: 6rem;
+
+  /* Angles droits : autorité, hors codes spa */
+  --radius-promise-frame: 0;
+  --radius-promise-card: 0;
+  --radius-faq-pill: 0;
+  --radius-lg: 1rem;
+
+  /* ~100–120px : air entre sections « club privé » */
+  --section-padding-y: clamp(6.25rem, 9vw, 7.5rem);
+
+  --faq-page-bg: var(--color-anchor-cream);
+  --faq-card-surface: color-mix(in srgb, white 88%, var(--color-anchor-cream));
+
+  /* CTA finale plein écran — photo + overlay */
+  --final-cta-padding-y: 8.75rem;
+  --final-cta-title-min: 5rem;
+  --final-cta-subtitle-size: 1.125rem;
+  --final-cta-overlay: color-mix(in srgb, var(--color-anchor-black) 55%, transparent);
+
+  /* Bouton primaire (girl boss) — même look partout */
+  --lc-btn-max-width: 26.25rem;
+  --lc-btn-border: color-mix(in srgb, var(--color-ink) 24%, transparent);
+  --lc-btn-border-hover: color-mix(in srgb, var(--color-ink) 38%, transparent);
+  --lc-btn-shadow-3d: 0 0.25rem 0 color-mix(in srgb, var(--color-ink) 14%, transparent);
+  --lc-btn-shadow-soft: 0 0.75rem 2rem color-mix(in srgb, var(--color-ink) 18%, transparent);
+  --lc-btn-shadow-hover-3d: 0 0.125rem 0 color-mix(in srgb, var(--color-ink) 16%, transparent);
+  --lc-btn-shadow-hover-soft: 0 1rem 2.5rem color-mix(in srgb, var(--color-ink) 26%, transparent);
+
+  --promise-surface: color-mix(in srgb, var(--color-lilac) 28%, var(--color-anchor-cream));
+  --promise-frame-bg: color-mix(in srgb, var(--color-lilac) 42%, white);
+  --promise-card-tone-1: color-mix(in srgb, var(--color-lilac) 78%, white);
+  --promise-card-tone-2: color-mix(in srgb, var(--color-blue) 22%, var(--color-lilac));
+  --promise-card-tone-3: color-mix(in srgb, var(--color-sage) 18%, var(--color-lilac));
+  --promise-card-tone-4: color-mix(in srgb, var(--color-forest) 12%, var(--color-lilac));
+  --promise-card-border: color-mix(in srgb, var(--color-ink) 32%, transparent);
+  --promise-burst-tint: color-mix(in srgb, var(--color-lavender) 45%, white);
+
+  /* Hero h1 — gouttières latérales pour resserrer le titre */
+  --hero-title-gutter: 7.5rem; /* 120px */
+
+  /* Titres de section (h2 / intro) — plus larges que l’ancienne colonne ~40–44rem ; hero exclu */
+  --lc-section-heading-stack: min(58rem, 100%);
+  --lc-section-heading-stack-tight: min(54rem, 100%);
+  --lc-section-copy-column: min(58rem, 100%);
+  /* Section story : plus large, padding vertical dédié (moins haut que les autres sections) */
+  --lc-story-inner-max: min(72rem, 100%);
+  --lc-story-padding-y: clamp(3rem, 5vw, 4.25rem);
+
+  --transition-base: 280ms ease;
+
+  --max-width-content: 45rem;
+  --max-width-site: 72rem;
+}
