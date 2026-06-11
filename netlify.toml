@@ -1,0 +1,7 @@
+# Protection temporaire du site (plan gratuit) via Basic Auth.
+# Configurer BASIC_AUTH_PASSWORD dans Netlify : Site configuration → Environment variables.
+# Pour ouvrir le site au public : supprimer BASIC_AUTH_PASSWORD et redéployer.
+
+[build]
+  command = "node scripts/generate-headers.mjs"
+  publish = "."
