@@ -836,35 +836,75 @@
 }
 
 .host-profile {
+  --host-accent: var(--color-lavender);
   position: relative;
   z-index: 1;
   padding: var(--space-3xl) var(--space-xl);
-  border-top: 1px solid color-mix(in srgb, var(--color-lavender) 22%, transparent);
+  border-top: 1px solid color-mix(in srgb, var(--color-anchor-cream) 14%, transparent);
 }
 
 .host-profile--val {
-  background-image: linear-gradient(
-    168deg,
-    color-mix(in srgb, var(--color-ink) 28%, var(--color-anchor-black)) 0%,
-    transparent 55%
-  );
+  --host-accent: var(--color-crimson);
+  background-color: color-mix(in srgb, var(--color-anchor-black) 72%, var(--host-accent));
+  background-image:
+    radial-gradient(
+      ellipse 110% 85% at 10% 15%,
+      color-mix(in srgb, var(--host-accent) 42%, transparent) 0%,
+      transparent 58%
+    ),
+    radial-gradient(
+      ellipse 70% 60% at 92% 88%,
+      color-mix(in srgb, var(--host-accent) 18%, transparent) 0%,
+      transparent 52%
+    ),
+    linear-gradient(
+      168deg,
+      color-mix(in srgb, var(--host-accent) 32%, var(--color-anchor-black)) 0%,
+      color-mix(in srgb, var(--color-anchor-black) 82%, var(--host-accent) 10%) 100%
+    );
 }
 
 .host-profile--jess {
-  background-image: linear-gradient(
-    168deg,
-    transparent 0%,
-    color-mix(in srgb, var(--color-anchor-black) 90%, var(--color-lilac) 6%) 100%
-  );
+  --host-accent: var(--color-pink);
+  background-color: color-mix(in srgb, var(--color-anchor-black) 74%, var(--host-accent));
+  background-image:
+    radial-gradient(
+      ellipse 95% 75% at 88% 22%,
+      color-mix(in srgb, var(--host-accent) 38%, transparent) 0%,
+      transparent 55%
+    ),
+    radial-gradient(
+      ellipse 80% 65% at 12% 90%,
+      color-mix(in srgb, var(--host-accent) 16%, transparent) 0%,
+      transparent 50%
+    ),
+    linear-gradient(
+      168deg,
+      color-mix(in srgb, var(--color-anchor-black) 86%, var(--host-accent) 8%) 0%,
+      color-mix(in srgb, var(--host-accent) 28%, var(--color-anchor-black)) 100%
+    );
 }
 
 .host-profile--billie {
+  --host-accent: var(--color-blue);
   padding-bottom: var(--section-padding-y);
-  background-image: linear-gradient(
-    168deg,
-    transparent 0%,
-    color-mix(in srgb, var(--color-anchor-black) 88%, var(--color-blue) 8%) 100%
-  );
+  background-color: color-mix(in srgb, var(--color-anchor-black) 70%, var(--host-accent));
+  background-image:
+    radial-gradient(
+      ellipse 100% 80% at 15% 78%,
+      color-mix(in srgb, var(--host-accent) 40%, transparent) 0%,
+      transparent 56%
+    ),
+    radial-gradient(
+      ellipse 75% 55% at 85% 18%,
+      color-mix(in srgb, var(--host-accent) 22%, transparent) 0%,
+      transparent 48%
+    ),
+    linear-gradient(
+      168deg,
+      color-mix(in srgb, var(--color-anchor-black) 84%, var(--host-accent) 10%) 0%,
+      color-mix(in srgb, var(--host-accent) 30%, var(--color-anchor-black)) 100%
+    );
 }
 
 .host-profile__inner {
@@ -1462,7 +1502,7 @@
   display: grid;
   width: 100%;
   gap: var(--space-2xl);
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .testimonial-card {
@@ -1558,15 +1598,7 @@
 
 @media (max-width: 1024px) {
   .testimonials__grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: var(--space-xl);
-  }
-
-  .testimonial-card--optional {
-    grid-column: 1 / -1;
-    max-width: 36rem;
-    margin: 0 auto;
-    width: 100%;
   }
 }
 
@@ -1582,11 +1614,6 @@
   .testimonials__grid {
     grid-template-columns: 1fr;
     gap: var(--space-lg);
-  }
-
-  .testimonial-card--optional {
-    grid-column: auto;
-    max-width: none;
   }
 }
 
@@ -1793,6 +1820,66 @@
   color: var(--color-ink);
 }
 
+.offer__premium {
+  margin-top: var(--space-3xl);
+  padding: var(--space-2xl) var(--space-xl);
+  border: 2px solid color-mix(in srgb, var(--color-lavender) 45%, transparent);
+  background-color: color-mix(in srgb, var(--color-lilac) 55%, white);
+  background-image: linear-gradient(
+    168deg,
+    color-mix(in srgb, white 55%, var(--color-lilac)) 0%,
+    color-mix(in srgb, var(--color-lavender) 10%, var(--color-lilac)) 100%
+  );
+}
+
+.offer__premium-kicker {
+  margin: 0 0 var(--space-sm);
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--color-ink) 68%, var(--color-lavender));
+}
+
+.offer__premium-title {
+  margin: 0 0 var(--space-lg);
+  font-family: var(--font-heading);
+  font-size: clamp(1.35rem, 1.4vw + 0.9rem, 1.75rem);
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--color-ink);
+}
+
+.offer__premium-list {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  gap: var(--space-sm) var(--space-xl);
+  list-style: none;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.offer__premium-list li {
+  position: relative;
+  padding-left: var(--space-lg);
+  font-family: var(--font-body);
+  font-size: clamp(0.875rem, 0.55vw + 0.78rem, 0.9375rem);
+  line-height: 1.5;
+  color: color-mix(in srgb, var(--color-ink) 88%, var(--color-forest));
+}
+
+.offer__premium-list li::before {
+  content: "";
+  position: absolute;
+  top: 0.45rem;
+  left: 0;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: var(--color-lavender);
+}
+
 @media (max-width: 900px) {
   .offer__grid {
     max-width: none;
@@ -1802,6 +1889,10 @@
   .offer__item:nth-child(n) {
     grid-column: auto;
     grid-row: auto;
+  }
+
+  .offer__premium-list {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -2053,7 +2144,7 @@
 }
 
 /* ============================================
-   Section inscription — accès gratuit
+   Section inscription — Collective & Premium
    ============================================ */
 
 .pricing {
@@ -2133,12 +2224,6 @@
   grid-template-columns: 1fr 1fr;
 }
 
-.pricing__grid--single {
-  max-width: 28rem;
-  margin: 0 auto;
-  grid-template-columns: 1fr;
-}
-
 .pricing-card {
   display: flex;
   flex-direction: column;
@@ -2163,21 +2248,47 @@
   }
 }
 
-.pricing-card--monthly {
-  border: 2px solid color-mix(in srgb, var(--color-anchor-black) 18%, transparent);
+.pricing-card--collective {
+  border: 3px solid var(--color-sage);
   background-color: var(--color-anchor-cream);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.3);
 }
 
-.pricing-card--annual {
-  border: 3px solid var(--color-lavender);
-  background-color: color-mix(in srgb, var(--color-lilac) 38%, var(--color-anchor-cream));
+.pricing-card--premium {
+  border: 2px solid color-mix(in srgb, var(--color-anchor-cream) 35%, transparent);
+  background-color: color-mix(in srgb, var(--color-lilac) 22%, var(--color-anchor-black));
   background-image: linear-gradient(
     168deg,
-    color-mix(in srgb, white 40%, var(--color-lilac)) 0%,
-    color-mix(in srgb, var(--color-lavender) 14%, var(--color-lilac)) 100%
+    color-mix(in srgb, var(--color-anchor-black) 88%, var(--color-ink)) 0%,
+    color-mix(in srgb, var(--color-anchor-black) 72%, var(--color-lavender)) 100%
   );
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.28);
+}
+
+.pricing-card--premium .pricing-card__name,
+.pricing-card--premium .pricing-card__amount,
+.pricing-card--premium .pricing-card__unit,
+.pricing-card--premium .pricing-card__period,
+.pricing-card--premium .pricing-card__item {
+  color: color-mix(in srgb, var(--color-anchor-cream) 94%, white);
+}
+
+.pricing-card--premium .pricing-card__period--accent {
+  color: var(--color-lavender);
+}
+
+.pricing-card--premium .pricing-card__icon {
+  color: var(--color-lavender);
+}
+
+.pricing-card__badge {
+  margin: 0 0 var(--space-xs);
+  font-family: var(--font-body);
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--color-ink) 70%, var(--color-forest));
 }
 
 .pricing-card__name {
@@ -2202,6 +2313,13 @@
   line-height: 1;
   letter-spacing: -0.02em;
   color: var(--color-ink);
+}
+
+.pricing-card__unit {
+  font-family: var(--font-body);
+  font-size: clamp(1rem, 1.2vw + 0.75rem, 1.25rem);
+  font-weight: 500;
+  color: color-mix(in srgb, var(--color-ink) 65%, var(--color-forest));
 }
 
 .pricing-card__period {
@@ -2250,8 +2368,8 @@
   color: var(--color-lavender);
 }
 
-.pricing-card--monthly .pricing-card__icon {
-  color: color-mix(in srgb, var(--color-ink) 78%, var(--color-lavender));
+.pricing-card--collective .pricing-card__icon {
+  color: color-mix(in srgb, var(--color-ink) 65%, var(--color-sage));
 }
 
 .pricing-card__svg {
@@ -2260,10 +2378,23 @@
   height: 1.25rem;
 }
 
-.pricing__actions {
-  display: flex;
-  justify-content: center;
-  margin-top: var(--space-2xl);
+.pricing-card__cta {
+  width: 100%;
+  margin-top: auto;
+  padding-top: var(--space-lg);
+  padding-bottom: var(--space-lg);
+}
+
+.pricing-card__cta--premium {
+  color: var(--color-ink);
+  background-color: var(--color-sage);
+  border-color: color-mix(in srgb, var(--color-ink) 18%, transparent);
+}
+
+.pricing-card__cta--premium:hover {
+  color: var(--color-ink);
+  background-color: color-mix(in srgb, var(--color-sage) 82%, white);
+  border-color: color-mix(in srgb, var(--color-ink) 28%, transparent);
 }
 
 @media (max-width: 900px) {

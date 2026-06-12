@@ -5,9 +5,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta
     name="description"
-    content="Leonis — Girl, tu es the main character. La vie est trop courte pour ne pas la bâtir à ton image."
+    content="Communauté, services et accompagnement pour entrepreneures francophones. Rejoins Leonis et deviens la main character de ton histoire."
   />
-  <title>Girl, tu es the main character — Leonis</title>
+  <title>Leonis — Bâtis ta vie à ton image</title>
+
+  <link rel="canonical" href="https://www.maisonleonis.com/home.html" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Leonis" />
+  <meta property="og:locale" content="fr_CA" />
+  <meta property="og:title" content="Leonis — Bâtis ta vie à ton image" />
+  <meta property="og:description" content="Communauté, services et accompagnement pour entrepreneures francophones. Rejoins Leonis et deviens la main character de ton histoire." />
+  <meta property="og:url" content="https://www.maisonleonis.com/home.html" />
+  <meta property="og:image" content="https://www.maisonleonis.com/Images/fondleonis.jpeg" />
+  <meta property="og:image:width" content="2940" />
+  <meta property="og:image:height" content="1604" />
+  <meta property="og:image:alt" content="Leonis — Girl, tu es the main character" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Leonis — Bâtis ta vie à ton image" />
+  <meta name="twitter:description" content="Communauté, services et accompagnement pour entrepreneures francophones. Rejoins Leonis et deviens la main character de ton histoire." />
+  <meta name="twitter:image" content="https://www.maisonleonis.com/Images/fondleonis.jpeg" />
+  <meta name="twitter:image:alt" content="Leonis — Girl, tu es the main character" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Leonis",
+    "url": "https://www.maisonleonis.com",
+    "logo": "https://www.maisonleonis.com/Images/rondetoile.svg",
+    "email": "team@maisonleonis.com",
+    "sameAs": [
+      "https://www.instagram.com/leonis.agency/",
+      "https://www.skool.com/leonis-community-2881/about"
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Leonis",
+    "url": "https://www.maisonleonis.com",
+    "description": "Communauté, services et accompagnement pour entrepreneures francophones.",
+    "inLanguage": "fr-CA"
+  }
+  </script>
+
   <link rel="icon" href="Images/rondetoile.svg" type="image/svg+xml" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,6 +62,12 @@
     rel="stylesheet"
   />
   <link href="https://fonts.cdnfonts.com/css/aileron" rel="stylesheet" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
 
   <link rel="preload" as="image" href="Images/jess.jpg" />
   <link rel="preload" as="image" href="Images/titrehero.png" />
@@ -24,7 +75,6 @@
   <link rel="stylesheet" href="css/base.css" />
   <link rel="stylesheet" href="css/nav-footer.css" />
   <link rel="stylesheet" href="css/pages/home.css" />
-  <script type="module" src="js/auth-guard.js"></script>
 </head>
 <body class="page-home">
 
@@ -53,16 +103,10 @@
             <a class="nav-popup__link nav-popup__link--active" href="home.html" aria-current="page">Accueil</a>
           </li>
           <li class="nav-popup__item">
-            <a class="nav-popup__link" href="lamaison.html">La Maison</a>
-          </li>
-          <li class="nav-popup__item">
             <a class="nav-popup__link" href="community.html">Communauté</a>
           </li>
           <li class="nav-popup__item">
-            <a class="nav-popup__link" href="services.html">Services</a>
-          </li>
-          <li class="nav-popup__item">
-            <a class="nav-popup__link" href="boutique.html">Boutique</a>
+            <a class="nav-popup__link" href="faq.html">FAQ</a>
           </li>
         </ul>
       </nav>
@@ -122,7 +166,7 @@
             />
           </h1>
 
-          <a class="hero-sticker__btn" href="services.html">Découvre nos services</a>
+          <a class="hero-sticker__btn" href="#services">Découvre nos services</a>
         </div>
       </div>
     </section>
@@ -167,7 +211,7 @@
           <p class="letter-text">On s'est longtemps senties comme ça aussi. Prisonnières des stratégies one-size fits all, des conseils contradictoires, des « I should », sans vraiment comprendre pourquoi ça ne marchait pas. C'était avant de changer d'approche et de commencer à construire une vie et une entreprise qui nous ressemble vraiment.</p>
           <p class="letter-text">La bonne nouvelle? Tu n'as plus à deviner.</p>
         </div>
-        <a class="letter-cta" href="quiz.html">Découvre ce qui te correspond</a>
+        <a class="letter-cta" href="community.html">Rejoins la communauté</a>
       </article>
     </section>
 
@@ -236,7 +280,7 @@
             Être présente, vivante, épanouie dans chaque moment qui mène jusqu'à eux.
           </p>
         </div>
-        <a class="for-you-cta" href="quiz.html">Je suis prête</a>
+        <a class="for-you-cta" href="community.html">Je suis prête</a>
       </article>
     </section>
 
@@ -306,7 +350,7 @@
             />
             <h3 class="service-card__title">Branding & Sites Web</h3>
             <p class="service-card__desc">Stratégie de marque, identité visuelle, site webs, etc.</p>
-            <a class="service-card__btn" href="#services">Je suis prête</a>
+            <a class="service-card__btn" href="services.html">Je suis prête</a>
           </article>
         </div>
       </div>
@@ -514,20 +558,16 @@
             <h2 class="site-footer__heading">Navigation</h2>
             <ul class="site-footer__list">
               <li><a class="site-footer__link" href="home.html">Accueil</a></li>
-              <li><a class="site-footer__link" href="lamaison.html">À propos</a></li>
               <li><a class="site-footer__link" href="community.html">Communauté</a></li>
-              <li><a class="site-footer__link" href="services.html">Services</a></li>
-              <li><a class="site-footer__link" href="boutique.html">Boutique</a></li>
             </ul>
           </nav>
 
           <nav class="site-footer__col" aria-label="Ressources">
             <h2 class="site-footer__heading">Ressources</h2>
             <ul class="site-footer__list">
-              <li><a class="site-footer__link" href="quiz.html">Quiz</a></li>
-              <li><a class="site-footer__link" href="community.html#faq">FAQ</a></li>
-              <li><a class="site-footer__link" href="community.html#garantie">Garantie</a></li>
-              <li><a class="site-footer__link" href="#connect">Instagram</a></li>
+              <li><a class="site-footer__link" href="faq.html">FAQ</a></li>
+              <li><a class="site-footer__link" href="garantie.html">Garantie</a></li>
+              <li><a class="site-footer__link" href="https://www.instagram.com/leonis.agency/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
             </ul>
           </nav>
 
@@ -535,56 +575,42 @@
             <h2 class="site-footer__heading">Contact</h2>
             <ul class="site-footer__list">
               <li>
-                <a class="site-footer__link" href="mailto:hello@maisonleonis.com">
-                  hello@maisonleonis.com
+                <a class="site-footer__link" href="mailto:team@maisonleonis.com">
+                  team@maisonleonis.com
                 </a>
               </li>
             </ul>
 
-            <ul class="site-footer__social" aria-label="Nos profils Instagram">
+            <ul class="site-footer__social" aria-label="Réseaux sociaux Leonis">
               <li>
                 <a
                   class="site-footer__social-link"
-                  href="https://www.instagram.com/jessyannricard/"
+                  href="https://www.instagram.com/leonis.agency/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="Instagram de Jess — @jessyannricard"
+                  aria-label="Instagram Leonis — @leonis.agency"
                 >
-                  <svg class="site-footer__social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
-                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-                  </svg>
+                  <i class="fa-brands fa-instagram site-footer__social-icon" aria-hidden="true"></i>
                 </a>
               </li>
               <li>
                 <a
                   class="site-footer__social-link"
-                  href="https://www.instagram.com/valentine.marmorat/"
+                  href="https://www.skool.com/leonis-community-2881/about"
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="Instagram de Val — @valentine.marmorat"
+                  aria-label="Communauté Leonis sur Skool"
                 >
-                  <svg class="site-footer__social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
-                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-                  </svg>
+                  <i class="fa-solid fa-people-group site-footer__social-icon" aria-hidden="true"></i>
                 </a>
               </li>
               <li>
                 <a
                   class="site-footer__social-link"
-                  href="https://www.instagram.com/dreambybillie/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Instagram de Billie — @dreambybillie"
+                  href="mailto:team@maisonleonis.com"
+                  aria-label="Écrire à team@maisonleonis.com"
                 >
-                  <svg class="site-footer__social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
-                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-                  </svg>
+                  <i class="fa-solid fa-envelope site-footer__social-icon" aria-hidden="true"></i>
                 </a>
               </li>
             </ul>
@@ -596,14 +622,15 @@
         <p class="site-footer__copy">© 2026 Leonis. Tous droits réservés.</p>
         <nav class="site-footer__legal" aria-label="Liens légaux">
           <ul class="site-footer__legal-list">
-            <li><a class="site-footer__legal-link" href="#">Politique de confidentialité</a></li>
-            <li><a class="site-footer__legal-link" href="#">Conditions d'utilisation</a></li>
+            <li><a class="site-footer__legal-link" href="confidentialite.html">Politique de confidentialité</a></li>
+            <li><a class="site-footer__legal-link" href="conditions.html">Conditions d'utilisation</a></li>
           </ul>
         </nav>
       </div>
     </div>
   </footer>
 
+  <script type="module" src="js/cookie-consent.js"></script>
   <script type="module" src="animation.js"></script>
 </body>
 </html>

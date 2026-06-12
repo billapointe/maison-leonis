@@ -5,9 +5,60 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta
     name="description"
-    content="Leonis Community — la communauté francophone d'entrepreneurs pour des collaborations qui accélèrent ton impact, ta visibilité et ta croissance."
+    content="Rejoins une communauté francophone sur Skool : networking, ateliers, visibilité. Collective gratuit ou Premium à 30 $/mois."
   />
-  <title>Leonis Community — Le bon réseau pour aller 10x plus vite</title>
+  <title>Leonis Community — Réseau d'entrepreneures francophones</title>
+
+  <link rel="canonical" href="https://www.maisonleonis.com/community.html" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Leonis" />
+  <meta property="og:locale" content="fr_CA" />
+  <meta property="og:title" content="Leonis Community — Réseau d'entrepreneures francophones" />
+  <meta property="og:description" content="Rejoins une communauté francophone sur Skool : networking, ateliers, visibilité. Collective gratuit ou Premium à 30 $/mois." />
+  <meta property="og:url" content="https://www.maisonleonis.com/community.html" />
+  <meta property="og:image" content="https://www.maisonleonis.com/Images/fondcommunity.jpeg" />
+  <meta property="og:image:width" content="2940" />
+  <meta property="og:image:height" content="1490" />
+  <meta property="og:image:alt" content="Leonis Community — Tu vas 10x plus vite avec le bon réseau" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Leonis Community — Réseau d'entrepreneures francophones" />
+  <meta name="twitter:description" content="Rejoins une communauté francophone sur Skool : networking, ateliers, visibilité. Collective gratuit ou Premium à 30 $/mois." />
+  <meta name="twitter:image" content="https://www.maisonleonis.com/Images/fondcommunity.jpeg" />
+  <meta name="twitter:image:alt" content="Leonis Community — Tu vas 10x plus vite avec le bon réseau" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Leonis Community Premium",
+    "description": "Communauté francophone d'entrepreneures sur Skool avec networking, ateliers, Astro Updates et coffee dates mensuels.",
+    "brand": {
+      "@type": "Brand",
+      "name": "Leonis"
+    },
+    "offers": [
+      {
+        "@type": "Offer",
+        "name": "Collective",
+        "price": "0",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock",
+        "url": "https://www.skool.com/leonis-community-2881/about"
+      },
+      {
+        "@type": "Offer",
+        "name": "Premium",
+        "price": "30",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock",
+        "url": "https://www.skool.com/leonis-community-2881/about"
+      }
+    ]
+  }
+  </script>
+
   <link rel="icon" href="Images/rondetoile.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,7 +77,6 @@
   <link rel="stylesheet" href="css/base.css" />
   <link rel="stylesheet" href="css/nav-footer.css" />
   <link rel="stylesheet" href="css/pages/community.css" />
-  <script type="module" src="js/auth-guard.js"></script>
 </head>
 <body>
 
@@ -55,16 +105,10 @@
             <a class="nav-popup__link" href="home.html">Accueil</a>
           </li>
           <li class="nav-popup__item">
-            <a class="nav-popup__link" href="lamaison.html">La Maison</a>
-          </li>
-          <li class="nav-popup__item">
             <a class="nav-popup__link nav-popup__link--active" href="community.html" aria-current="page">Communauté</a>
           </li>
           <li class="nav-popup__item">
-            <a class="nav-popup__link" href="services.html">Services</a>
-          </li>
-          <li class="nav-popup__item">
-            <a class="nav-popup__link" href="boutique.html">Boutique</a>
+            <a class="nav-popup__link" href="faq.html">FAQ</a>
           </li>
         </ul>
       </nav>
@@ -94,7 +138,7 @@
           </p>
 
           <p class="hero__promo" data-animate>
-            Accès 100 % gratuit · Inscription sur Skool
+            Collective gratuit · Premium 30&nbsp;$ / mois · Sur Skool
           </p>
 
           <a
@@ -112,10 +156,10 @@
       <div class="hero__ticker" aria-hidden="true">
         <div class="hero__ticker-track">
           <span class="hero__ticker-item"
-            >ACCÈS GRATUIT SUR SKOOL // ACCÈS GRATUIT SUR SKOOL // ACCÈS GRATUIT SUR SKOOL //</span
+            >COLLECTIVE GRATUIT SUR SKOOL // PREMIUM 30 $ / MOIS // COLLECTIVE GRATUIT SUR SKOOL //</span
           >
           <span class="hero__ticker-item"
-            >ACCÈS GRATUIT SUR SKOOL // ACCÈS GRATUIT SUR SKOOL // ACCÈS GRATUIT SUR SKOOL // ACCÈS GRATUIT SUR SKOOL //</span
+            >COLLECTIVE GRATUIT SUR SKOOL // PREMIUM 30 $ / MOIS // COLLECTIVE GRATUIT SUR SKOOL // PREMIUM 30 $ / MOIS //</span
           >
         </div>
       </div>
@@ -562,38 +606,27 @@
         <div class="testimonials__grid">
           <article class="testimonial-card" aria-label="Témoignage vidéo 1">
             <div class="testimonial-card__ratio">
-              <div class="testimonial-card__placeholder" aria-hidden="true">
-                <span class="testimonial-card__placeholder-icon" aria-hidden="true"></span>
-                <span class="testimonial-card__placeholder-text">Vidéo à ajouter</span>
-              </div>
-              <!--
-                Retirer le bloc .testimonial-card__placeholder ci-dessus, puis coller par ex. :
-                <iframe class="testimonial-card__iframe" src="https://www.youtube.com/embed/ID"
-                  title="Témoignage — Prénom" loading="lazy" allowfullscreen
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
-                Ou : <video class="testimonial-card__video" controls playsinline poster="chemin/visuel.jpg">
-                  <source src="chemin/video.webm" type="video/webm" />
-                  <source src="chemin/video.mp4" type="video/mp4" />
-                </video>
-              -->
+              <iframe
+                class="testimonial-card__iframe"
+                src="https://www.youtube.com/embed/i26M6k1wayM"
+                title="Témoignage vidéo 1"
+                loading="lazy"
+                allowfullscreen
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              ></iframe>
             </div>
           </article>
 
           <article class="testimonial-card" aria-label="Témoignage vidéo 2">
             <div class="testimonial-card__ratio">
-              <div class="testimonial-card__placeholder" aria-hidden="true">
-                <span class="testimonial-card__placeholder-icon" aria-hidden="true"></span>
-                <span class="testimonial-card__placeholder-text">Vidéo à ajouter</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="testimonial-card testimonial-card--optional" aria-label="Témoignage vidéo 3">
-            <div class="testimonial-card__ratio">
-              <div class="testimonial-card__placeholder" aria-hidden="true">
-                <span class="testimonial-card__placeholder-icon" aria-hidden="true"></span>
-                <span class="testimonial-card__placeholder-text">Vidéo à ajouter</span>
-              </div>
+              <iframe
+                class="testimonial-card__iframe"
+                src="https://www.youtube.com/embed/nQBT93_djp8"
+                title="Témoignage vidéo 2"
+                loading="lazy"
+                allowfullscreen
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              ></iframe>
             </div>
           </article>
         </div>
@@ -603,51 +636,60 @@
     <section class="offer" id="loffre" aria-labelledby="offer-title">
       <div class="offer__inner">
         <header class="offer__header">
-         
+          <p class="offer__kicker">Deux accès, une même communauté</p>
           <h2 class="offer__title" id="offer-title">
-            Ce qui est <em class="offer__title-em">inclus</em> chaque mois
+            Commence en <em class="offer__title-em">Collective</em> — gratuitement
           </h2>
-        
+          <p class="offer__lead">
+            Le plan Collective te donne déjà accès au réseau, aux ateliers et aux lives. Premium,
+            c'est pour aller plus loin quand tu es prête.
+          </p>
         </header>
 
         <ul class="offer__grid">
           <li class="offer__item">
             <article class="offer-card offer-card--tone-1">
-              <h3 class="offer-card__title">Animation hebdomadaire</h3>
+              <p class="offer-card__tag">Collective</p>
+              <h3 class="offer-card__title">Réseau qualifié</h3>
               <p class="offer-card__desc">
-                Astro Updates, moments de célébration et highlights des membres pour garder le fil
-                sans te noyer.
+                Accès à un réseau de 15+ membres alignés — des collaborations qui ont du sens, pas
+                du réseautage vide.
               </p>
             </article>
           </li>
           <li class="offer__item">
             <article class="offer-card offer-card--tone-2">
-              <h3 class="offer-card__title">Networking en ligne</h3>
+              <p class="offer-card__tag">Collective</p>
+              <h3 class="offer-card__title">Map monde</h3>
               <p class="offer-card__desc">
-                Deux activités par mois pour rencontrer des pairs alignés et créer des ponts
-                concrets.
+                Trouve les Leonis Besties près de chez toi et crée des connexions en vrai, partout
+                dans le monde.
               </p>
             </article>
           </li>
           <li class="offer__item">
             <article class="offer-card offer-card--tone-3">
-              <h3 class="offer-card__title">Coffee date mensuel</h3>
+              <p class="offer-card__tag">Collective</p>
+              <h3 class="offer-card__title">Speed dating membres</h3>
               <p class="offer-card__desc">
-                Un Q&amp;R en direct avec Maison Leonis pour tes questions, sans filtre ni
-                script marketing.
+                Des sessions pour mettre en lumière nos membres et créer des ponts concrets entre
+                entrepreneures.
               </p>
             </article>
           </li>
           <li class="offer__item">
             <article class="offer-card offer-card--tone-2">
-              <h3 class="offer-card__title">Experte invitée</h3>
+              <p class="offer-card__tag">Collective</p>
+              <h3 class="offer-card__title">4 ateliers par mois</h3>
               <p class="offer-card__desc">
-                Une spécialiste différente chaque mois pour élargir ton regard et tes compétences.
+                Des ateliers de connexion chaque mois, dont un animé par une experte invitée de la
+                communauté.
               </p>
             </article>
           </li>
           <li class="offer__item">
             <article class="offer-card offer-card--tone-3">
+              <p class="offer-card__tag">Collective</p>
               <h3 class="offer-card__title">Lives spontanés</h3>
               <p class="offer-card__desc">
                 Des sessions live selon l'énergie du groupe — annoncées quand ça fait du sens.
@@ -656,14 +698,27 @@
           </li>
           <li class="offer__item">
             <article class="offer-card offer-card--tone-1">
-              <h3 class="offer-card__title">Événements en présentiel</h3>
+              <p class="offer-card__tag">Collective</p>
+              <h3 class="offer-card__title">Produits digitaux</h3>
               <p class="offer-card__desc">
-                Avantages membres sur toutes nos rencontres IRL : moins de friction pour te montrer
-                en vrai.
+                Accès à nos ressources digitales à tarif préférentiel — pour avancer sans tout
+                payer plein prix.
               </p>
             </article>
           </li>
         </ul>
+
+        <aside class="offer__premium" aria-label="Avantages du plan Premium">
+          <p class="offer__premium-kicker">Plan Premium — 30&nbsp;$ / mois</p>
+          <h3 class="offer__premium-title">Tout le Collective, plus&nbsp;:</h3>
+          <ul class="offer__premium-list">
+            <li>Produits digitaux offerts en accès complet</li>
+            <li>Astro Updates par Jess</li>
+            <li>Coffee date mensuel — Q&amp;R avec Maison Leonis</li>
+            <li>Boîte à questions pour nos expertes invitées</li>
+            <li>Priorité sur les événements en présentiel</li>
+          </ul>
+        </aside>
       </div>
     </section>
 
@@ -765,19 +820,21 @@
       <div class="pricing__inner">
         <header class="pricing__header">
           <h2 class="pricing__title" id="pricing-title">
-            <em class="pricing__title-em">Rejoins-nous</em> gratuitement
+            Choisis ton <em class="pricing__title-em">accès</em>
           </h2>
         </header>
 
         <p class="pricing__alert" role="status">
-          L'accès à Leonis Community est 100 % gratuit — inscris-toi sur Skool en quelques clics.
+          Commence gratuitement en Collective — passe en Premium quand tu veux aller plus loin.
         </p>
 
-        <div class="pricing__grid pricing__grid--single">
-          <article class="pricing-card pricing-card--monthly">
-            <h3 class="pricing-card__name">Accès complet</h3>
+        <div class="pricing__grid">
+          <article class="pricing-card pricing-card--collective">
+            <p class="pricing-card__badge">Notre point de départ</p>
+            <h3 class="pricing-card__name">Collective</h3>
             <p class="pricing-card__price">
-              <span class="pricing-card__amount">Gratuit</span>
+              <span class="pricing-card__amount">0&nbsp;$</span>
+              <span class="pricing-card__unit">/ mois</span>
             </p>
             <p class="pricing-card__period">sur Skool · sans engagement</p>
             <ul class="pricing-card__list">
@@ -790,7 +847,7 @@
                     />
                   </svg>
                 </span>
-                <span class="pricing-card__label">Toutes les inclusions</span>
+                <span class="pricing-card__label">Réseau de 15+ membres qualifiés</span>
               </li>
               <li class="pricing-card__item">
                 <span class="pricing-card__icon" aria-hidden="true">
@@ -801,7 +858,7 @@
                     />
                   </svg>
                 </span>
-                <span class="pricing-card__label">Animation, networking et lives inclus</span>
+                <span class="pricing-card__label">Map monde pour trouver les Leonis Besties</span>
               </li>
               <li class="pricing-card__item">
                 <span class="pricing-card__icon" aria-hidden="true">
@@ -812,19 +869,132 @@
                     />
                   </svg>
                 </span>
-                <span class="pricing-card__label">Tu peux quitter quand tu veux</span>
+                <span class="pricing-card__label">Speed dating pour highlight nos membres</span>
+              </li>
+              <li class="pricing-card__item">
+                <span class="pricing-card__icon" aria-hidden="true">
+                  <svg class="pricing-card__svg" viewBox="0 0 24 24" width="20" height="20" focusable="false">
+                    <path
+                      fill="currentColor"
+                      d="M9 16.17L4.83 12l-1.42 1.41L9 19l12-12l-1.41-1.41L9 16.17z"
+                    />
+                  </svg>
+                </span>
+                <span class="pricing-card__label">4 ateliers de connexion par mois</span>
+              </li>
+              <li class="pricing-card__item">
+                <span class="pricing-card__icon" aria-hidden="true">
+                  <svg class="pricing-card__svg" viewBox="0 0 24 24" width="20" height="20" focusable="false">
+                    <path
+                      fill="currentColor"
+                      d="M9 16.17L4.83 12l-1.42 1.41L9 19l12-12l-1.41-1.41L9 16.17z"
+                    />
+                  </svg>
+                </span>
+                <span class="pricing-card__label">Lives spontanés</span>
+              </li>
+              <li class="pricing-card__item">
+                <span class="pricing-card__icon" aria-hidden="true">
+                  <svg class="pricing-card__svg" viewBox="0 0 24 24" width="20" height="20" focusable="false">
+                    <path
+                      fill="currentColor"
+                      d="M9 16.17L4.83 12l-1.42 1.41L9 19l12-12l-1.41-1.41L9 16.17z"
+                    />
+                  </svg>
+                </span>
+                <span class="pricing-card__label">Produits digitaux à tarif préférentiel</span>
               </li>
             </ul>
+            <a
+              class="pricing-card__cta lc-btn"
+              href="https://www.skool.com/leonis-community-2881/about"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Rejoindre gratuitement</a>
           </article>
-        </div>
 
-        <div class="pricing__actions">
-          <a
-            class="lc-btn"
-            href="https://www.skool.com/leonis-community-2881/about"
-            target="_blank"
-            rel="noopener noreferrer"
-          >Je rejoins Leonis Community aujourd'hui</a>
+          <article class="pricing-card pricing-card--premium">
+            <h3 class="pricing-card__name">Premium</h3>
+            <p class="pricing-card__price">
+              <span class="pricing-card__amount">30&nbsp;$</span>
+              <span class="pricing-card__unit">/ mois</span>
+            </p>
+            <p class="pricing-card__period pricing-card__period--accent">sur Skool · sans engagement</p>
+            <ul class="pricing-card__list">
+              <li class="pricing-card__item">
+                <span class="pricing-card__icon" aria-hidden="true">
+                  <svg class="pricing-card__svg" viewBox="0 0 24 24" width="20" height="20" focusable="false">
+                    <path
+                      fill="currentColor"
+                      d="M9 16.17L4.83 12l-1.42 1.41L9 19l12-12l-1.41-1.41L9 16.17z"
+                    />
+                  </svg>
+                </span>
+                <span class="pricing-card__label">Tout ce qui est inclus dans Collective</span>
+              </li>
+              <li class="pricing-card__item">
+                <span class="pricing-card__icon" aria-hidden="true">
+                  <svg class="pricing-card__svg" viewBox="0 0 24 24" width="20" height="20" focusable="false">
+                    <path
+                      fill="currentColor"
+                      d="M9 16.17L4.83 12l-1.42 1.41L9 19l12-12l-1.41-1.41L9 16.17z"
+                    />
+                  </svg>
+                </span>
+                <span class="pricing-card__label">Accès à tous les produits digitaux gratuitement</span>
+              </li>
+              <li class="pricing-card__item">
+                <span class="pricing-card__icon" aria-hidden="true">
+                  <svg class="pricing-card__svg" viewBox="0 0 24 24" width="20" height="20" focusable="false">
+                    <path
+                      fill="currentColor"
+                      d="M9 16.17L4.83 12l-1.42 1.41L9 19l12-12l-1.41-1.41L9 16.17z"
+                    />
+                  </svg>
+                </span>
+                <span class="pricing-card__label">Astro Updates par Jess</span>
+              </li>
+              <li class="pricing-card__item">
+                <span class="pricing-card__icon" aria-hidden="true">
+                  <svg class="pricing-card__svg" viewBox="0 0 24 24" width="20" height="20" focusable="false">
+                    <path
+                      fill="currentColor"
+                      d="M9 16.17L4.83 12l-1.42 1.41L9 19l12-12l-1.41-1.41L9 16.17z"
+                    />
+                  </svg>
+                </span>
+                <span class="pricing-card__label">Coffee date mensuel — Q&amp;R avec Maison Leonis</span>
+              </li>
+              <li class="pricing-card__item">
+                <span class="pricing-card__icon" aria-hidden="true">
+                  <svg class="pricing-card__svg" viewBox="0 0 24 24" width="20" height="20" focusable="false">
+                    <path
+                      fill="currentColor"
+                      d="M9 16.17L4.83 12l-1.42 1.41L9 19l12-12l-1.41-1.41L9 16.17z"
+                    />
+                  </svg>
+                </span>
+                <span class="pricing-card__label">Boîte à questions pour nos expertes invitées</span>
+              </li>
+              <li class="pricing-card__item">
+                <span class="pricing-card__icon" aria-hidden="true">
+                  <svg class="pricing-card__svg" viewBox="0 0 24 24" width="20" height="20" focusable="false">
+                    <path
+                      fill="currentColor"
+                      d="M9 16.17L4.83 12l-1.42 1.41L9 19l12-12l-1.41-1.41L9 16.17z"
+                    />
+                  </svg>
+                </span>
+                <span class="pricing-card__label">Priorité sur les événements en présentiel</span>
+              </li>
+            </ul>
+            <a
+              class="pricing-card__cta pricing-card__cta--premium lc-btn"
+              href="https://www.skool.com/leonis-community-2881/plans"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Passer en Premium</a>
+          </article>
         </div>
       </div>
     </section>
@@ -928,6 +1098,36 @@
               <button
                 class="faq__question"
                 type="button"
+                id="faq-t-plans"
+                aria-expanded="false"
+                aria-controls="faq-p-plans"
+              >
+                <span class="faq__question-text">Quelle est la différence entre Collective et Premium ?</span>
+                <span class="faq__icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div
+              class="faq__panel"
+              id="faq-p-plans"
+              role="region"
+              aria-labelledby="faq-t-plans"
+            >
+              <div class="faq__panel-inner">
+                <p class="faq__answer">
+                  Collective est gratuit et te donne accès au réseau, à la map, aux ateliers, aux lives
+                  et aux produits digitaux à tarif préférentiel. Premium (30&nbsp;$ / mois) inclut tout
+                  ça, plus les produits digitaux en accès complet, les Astro Updates, le coffee date
+                  mensuel, la boîte à questions et la priorité sur les événements en présentiel. Tu
+                  peux commencer en Collective et passer en Premium quand tu le sens.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="faq__item">
+            <h3 class="faq__heading">
+              <button
+                class="faq__question"
+                type="button"
                 id="faq-t-cancel"
                 aria-expanded="false"
                 aria-controls="faq-p-cancel"
@@ -944,7 +1144,8 @@
             >
               <div class="faq__panel-inner">
                 <p class="faq__answer">
-                  Oui. Tu peux quitter la communauté sur Skool à tout moment, sans frais ni engagement.
+                  Oui. Collective reste gratuit sans engagement. Si tu es en Premium, tu peux annuler à
+                  tout moment sur Skool — ton accès Premium se termine à la fin de la période en cours.
                 </p>
               </div>
             </div>
@@ -956,7 +1157,7 @@
           <p class="faq__footer-text">
             Écris-nous : on te répond dès qu'on peut, avec le même soin qu'en communauté.
           </p>
-          <a class="lc-btn" href="#">Nous contacter</a>
+          <a class="lc-btn" href="faq.html">Voir toutes les questions</a>
         </footer>
       </div>
     </section>
@@ -968,10 +1169,10 @@
     >
       <div class="guarantee__inner">
         <h2 class="guarantee__title" id="guarantee-title">Sans engagement</h2>
-        <p class="guarantee__subtitle">Accès 100 % gratuit</p>
+        <p class="guarantee__subtitle">Collective gratuit · Premium flexible</p>
         <p class="guarantee__text">
-          Rejoins la communauté sur Skool quand tu es prête. Aucun paiement, aucun engagement —
-          juste du vrai réseau.
+          Commence en Collective sur Skool sans payer un sou. Passe en Premium seulement si tu veux
+          aller plus loin — et annule quand tu veux.
         </p>
       </div>
     </section>
@@ -988,7 +1189,7 @@
           T'es prête à être <em class="final-cta__title-em">vue</em> ?
         </h2>
         <p class="final-cta__text">
-          Rejoins Leonis Community aujourd'hui — c'est gratuit sur Skool.
+          Rejoins Leonis Community gratuitement en Collective — ou passe en Premium quand tu es prête.
         </p>
         <div class="final-cta__actions">
           <a
@@ -1001,6 +1202,93 @@
       </div>
     </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__top">
+        <div class="site-footer__brand">
+          <a class="site-footer__logo" href="home.html">Leonis</a>
+          <p class="site-footer__tagline">
+            La vie est trop courte pour ne pas la bâtir à ton image.
+          </p>
+        </div>
+
+        <div class="site-footer__grid">
+          <nav class="site-footer__col site-footer__col--navigation" aria-label="Navigation du site">
+            <h2 class="site-footer__heading">Navigation</h2>
+            <ul class="site-footer__list">
+              <li><a class="site-footer__link" href="home.html">Accueil</a></li>
+              <li><a class="site-footer__link" href="community.html" aria-current="page">Communauté</a></li>
+            </ul>
+          </nav>
+
+          <nav class="site-footer__col" aria-label="Ressources">
+            <h2 class="site-footer__heading">Ressources</h2>
+            <ul class="site-footer__list">
+              <li><a class="site-footer__link" href="faq.html">FAQ</a></li>
+              <li><a class="site-footer__link" href="garantie.html">Garantie</a></li>
+              <li><a class="site-footer__link" href="https://www.instagram.com/leonis.agency/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            </ul>
+          </nav>
+
+          <div class="site-footer__col">
+            <h2 class="site-footer__heading">Contact</h2>
+            <ul class="site-footer__list">
+              <li>
+                <a class="site-footer__link" href="mailto:team@maisonleonis.com">
+                  team@maisonleonis.com
+                </a>
+              </li>
+            </ul>
+
+            <ul class="site-footer__social" aria-label="Réseaux sociaux Leonis">
+              <li>
+                <a
+                  class="site-footer__social-link"
+                  href="https://www.instagram.com/leonis.agency/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram Leonis — @leonis.agency"
+                >
+                  <i class="fa-brands fa-instagram site-footer__social-icon" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="site-footer__social-link"
+                  href="https://www.skool.com/leonis-community-2881/about"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Communauté Leonis sur Skool"
+                >
+                  <i class="fa-solid fa-people-group site-footer__social-icon" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="site-footer__social-link"
+                  href="mailto:team@maisonleonis.com"
+                  aria-label="Écrire à team@maisonleonis.com"
+                >
+                  <i class="fa-solid fa-envelope site-footer__social-icon" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-footer__bottom">
+        <p class="site-footer__copy">© 2026 Leonis. Tous droits réservés.</p>
+        <nav class="site-footer__legal" aria-label="Liens légaux">
+          <ul class="site-footer__legal-list">
+            <li><a class="site-footer__legal-link" href="confidentialite.html">Politique de confidentialité</a></li>
+            <li><a class="site-footer__legal-link" href="conditions.html">Conditions d'utilisation</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </footer>
 
   <button
     class="scroll-top"
@@ -1029,6 +1317,7 @@
     </svg>
   </button>
 
+  <script type="module" src="js/cookie-consent.js"></script>
   <script type="module" src="animation.js"></script>
 </body>
 </html>

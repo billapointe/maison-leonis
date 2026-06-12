@@ -3,16 +3,13 @@
 import { createHash } from 'node:crypto';
 import { writeFileSync } from 'node:fs';
 
-const DEFAULT_PASSWORD = 'leonis';
 const envPassword = process.env.GATE_PASSWORD;
 
-let password = DEFAULT_PASSWORD;
-let isEnabled = true;
+let password = '';
+let isEnabled = false;
 
-if (envPassword === '') {
-  isEnabled = false;
-  password = '';
-} else if (envPassword) {
+if (envPassword) {
+  isEnabled = true;
   password = envPassword;
 }
 
@@ -30,5 +27,5 @@ writeFileSync('js/auth-config.js', content);
 if (isEnabled) {
   console.log('Protection par mot de passe activée.');
 } else {
-  console.log('Protection désactivée : GATE_PASSWORD vide.');
+  console.log('Protection désactivée (gate off).');
 }

@@ -2,82 +2,13 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <meta name="description" content="Accès privé au site Leonis — entre le mot de passe pour continuer." />
+  <meta http-equiv="refresh" content="0; url=home.html" />
   <meta name="robots" content="noindex, nofollow" />
-  <title>Accès privé — Leonis</title>
-  <link rel="icon" href="Images/rondetoile.svg" type="image/svg+xml" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Luxurious+Script&family=Noto+Serif+Display:ital,wdth,wght@0,62.5..100,400..700;1,62.5..100,400..700&display=swap"
-    rel="stylesheet"
-  />
-
-  <link rel="stylesheet" href="css/variables.css" />
-  <link rel="stylesheet" href="css/base.css" />
-  <link rel="stylesheet" href="css/pages/gate.css" />
+  <link rel="canonical" href="https://www.maisonleonis.com/home.html" />
+  <title>Leonis</title>
+  <script type="module">
+    window.location.replace('home.html');
+  </script>
 </head>
-<body class="page-gate">
-
-  <div class="gate__backdrop" aria-hidden="true">
-    <img class="gate__bloom gate__bloom--star" src="Images/rondetoile.svg" alt="" width="320" height="320" />
-    <img class="gate__bloom gate__bloom--flower" src="Images/formerose.svg" alt="" width="320" height="320" />
-    <img class="gate__bloom gate__bloom--heart" src="Images/rondcoeur.svg" alt="" width="180" height="180" />
-  </div>
-
-  <main class="gate">
-    <div class="gate__panel">
-      <div class="gate__brand">
-        <p class="gate__eyebrow">Accès privé</p>
-        <p class="gate__logo" aria-hidden="true">Leonis</p>
-      </div>
-
-      <div class="gate__intro">
-        <h1 class="gate__title">Bienvenue, girl boss</h1>
-        <p class="gate__lead">
-          Ce site est réservé à la communauté Leonis pour l’instant. Entre le mot de passe pour y accéder.
-        </p>
-      </div>
-
-      <form class="gate-form" action="#" method="post" novalidate>
-        <label class="gate-form__label" for="gate-password">Mot de passe</label>
-
-        <div class="gate-form__field">
-          <input
-            class="gate-form__input"
-            id="gate-password"
-            name="password"
-            type="password"
-            autocomplete="current-password"
-            placeholder="Ton mot de passe"
-            required
-          />
-          <button
-            class="gate-form__toggle"
-            type="button"
-            aria-pressed="false"
-            aria-label="Afficher le mot de passe"
-          >
-            <svg class="gate-form__toggle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
-              <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z" />
-              <circle cx="12" cy="12" r="3" />
-            </svg>
-          </button>
-        </div>
-
-        <p class="gate-form__error" role="alert" hidden></p>
-
-        <button class="lc-btn gate-form__submit" type="submit">
-          Entrer sur le site
-        </button>
-      </form>
-
-      <p class="gate__note">Tu n’as pas le mot de passe ? Contacte l’équipe Leonis.</p>
-    </div>
-  </main>
-
-  <script type="module" src="js/gate.js"></script>
-</body>
+<body></body>
 </html>

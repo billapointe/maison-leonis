@@ -217,6 +217,24 @@
   color: color-mix(in srgb, var(--color-navy) 58%, transparent);
 }
 
+.gate__legal {
+  margin: var(--space-lg) 0 0;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.gate__legal a {
+  color: color-mix(in srgb, var(--color-navy) 65%, transparent);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+  transition: color var(--transition-base);
+}
+
+.gate__legal a:hover {
+  color: var(--color-lavender);
+}
+
 @keyframes gate-float {
   0%,
   100% {

@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.maisonleonis.com/sitemap.xml
+
+Disallow: /index.html
+Disallow: /services-draft.html

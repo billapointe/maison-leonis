@@ -1,7 +1,16 @@
-# Protection du site via page d'accès (index.html).
-# Configurer GATE_PASSWORD dans Netlify : Site configuration → Environment variables.
-# Pour ouvrir le site au public : supprimer GATE_PASSWORD et redéployer.
+# Gate désactivée par défaut. Pour une preview privée :
+# GATE_PASSWORD=ton-mot-de-passe dans Netlify → Environment variables.
 
 [build]
   command = "node scripts/generate-auth-config.mjs"
   publish = "."
+
+[[redirects]]
+  from = "/"
+  to = "/home.html"
+  status = 302
+
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404

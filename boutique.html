@@ -7,7 +7,28 @@
     name="description"
     content="Boutique Leonis — page en construction. Nos produits et offres exclusives arrivent bientôt."
   />
+  <meta name="robots" content="noindex, follow" />
   <title>Boutique — Leonis</title>
+
+  <link rel="canonical" href="https://www.maisonleonis.com/boutique.html" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Leonis" />
+  <meta property="og:locale" content="fr_CA" />
+  <meta property="og:title" content="Boutique — Leonis" />
+  <meta property="og:description" content="Boutique Leonis — page en construction. Nos produits et offres exclusives arrivent bientôt." />
+  <meta property="og:url" content="https://www.maisonleonis.com/boutique.html" />
+  <meta property="og:image" content="https://www.maisonleonis.com/Images/fondleonis.jpeg" />
+  <meta property="og:image:width" content="2940" />
+  <meta property="og:image:height" content="1604" />
+  <meta property="og:image:alt" content="Boutique Leonis" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Boutique — Leonis" />
+  <meta name="twitter:description" content="Boutique Leonis — page en construction. Nos produits et offres exclusives arrivent bientôt." />
+  <meta name="twitter:image" content="https://www.maisonleonis.com/Images/fondleonis.jpeg" />
+  <meta name="twitter:image:alt" content="Boutique Leonis" />
+
   <link rel="icon" href="Images/rondetoile.svg" type="image/svg+xml" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,12 +37,17 @@
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Luxurious+Script&family=Noto+Serif+Display:ital,wdth,wght@0,62.5..100,400..700;1,62.5..100,400..700&display=swap"
     rel="stylesheet"
   />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
 
   <link rel="stylesheet" href="css/variables.css" />
   <link rel="stylesheet" href="css/base.css" />
   <link rel="stylesheet" href="css/nav-footer.css" />
   <link rel="stylesheet" href="css/pages/boutique.css" />
-  <script type="module" src="js/auth-guard.js"></script>
 </head>
 <body class="page-boutique">
 
@@ -50,16 +76,10 @@
             <a class="nav-popup__link" href="home.html">Accueil</a>
           </li>
           <li class="nav-popup__item">
-            <a class="nav-popup__link" href="lamaison.html">La Maison</a>
-          </li>
-          <li class="nav-popup__item">
             <a class="nav-popup__link" href="community.html">Communauté</a>
           </li>
           <li class="nav-popup__item">
-            <a class="nav-popup__link" href="services.html">Services</a>
-          </li>
-          <li class="nav-popup__item">
-            <a class="nav-popup__link nav-popup__link--active" href="boutique.html" aria-current="page">Boutique</a>
+            <a class="nav-popup__link" href="faq.html">FAQ</a>
           </li>
         </ul>
       </nav>
@@ -117,20 +137,16 @@
             <h2 class="site-footer__heading">Navigation</h2>
             <ul class="site-footer__list">
               <li><a class="site-footer__link" href="home.html">Accueil</a></li>
-              <li><a class="site-footer__link" href="lamaison.html">À propos</a></li>
               <li><a class="site-footer__link" href="community.html">Communauté</a></li>
-              <li><a class="site-footer__link" href="services.html">Services</a></li>
-              <li><a class="site-footer__link" href="boutique.html" aria-current="page">Boutique</a></li>
             </ul>
           </nav>
 
           <nav class="site-footer__col" aria-label="Ressources">
             <h2 class="site-footer__heading">Ressources</h2>
             <ul class="site-footer__list">
-              <li><a class="site-footer__link" href="quiz.html">Quiz</a></li>
-              <li><a class="site-footer__link" href="community.html#faq">FAQ</a></li>
-              <li><a class="site-footer__link" href="community.html#garantie">Garantie</a></li>
-              <li><a class="site-footer__link" href="home.html#connect">Instagram</a></li>
+              <li><a class="site-footer__link" href="faq.html">FAQ</a></li>
+              <li><a class="site-footer__link" href="garantie.html">Garantie</a></li>
+              <li><a class="site-footer__link" href="https://www.instagram.com/leonis.agency/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
             </ul>
           </nav>
 
@@ -138,56 +154,42 @@
             <h2 class="site-footer__heading">Contact</h2>
             <ul class="site-footer__list">
               <li>
-                <a class="site-footer__link" href="mailto:hello@maisonleonis.com">
-                  hello@maisonleonis.com
+                <a class="site-footer__link" href="mailto:team@maisonleonis.com">
+                  team@maisonleonis.com
                 </a>
               </li>
             </ul>
 
-            <ul class="site-footer__social" aria-label="Nos profils Instagram">
+            <ul class="site-footer__social" aria-label="Réseaux sociaux Leonis">
               <li>
                 <a
                   class="site-footer__social-link"
-                  href="https://www.instagram.com/jessyannricard/"
+                  href="https://www.instagram.com/leonis.agency/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="Instagram de Jess — @jessyannricard"
+                  aria-label="Instagram Leonis — @leonis.agency"
                 >
-                  <svg class="site-footer__social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
-                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-                  </svg>
+                  <i class="fa-brands fa-instagram site-footer__social-icon" aria-hidden="true"></i>
                 </a>
               </li>
               <li>
                 <a
                   class="site-footer__social-link"
-                  href="https://www.instagram.com/valentine.marmorat/"
+                  href="https://www.skool.com/leonis-community-2881/about"
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="Instagram de Val — @valentine.marmorat"
+                  aria-label="Communauté Leonis sur Skool"
                 >
-                  <svg class="site-footer__social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
-                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-                  </svg>
+                  <i class="fa-solid fa-people-group site-footer__social-icon" aria-hidden="true"></i>
                 </a>
               </li>
               <li>
                 <a
                   class="site-footer__social-link"
-                  href="https://www.instagram.com/dreambybillie/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Instagram de Billie — @dreambybillie"
+                  href="mailto:team@maisonleonis.com"
+                  aria-label="Écrire à team@maisonleonis.com"
                 >
-                  <svg class="site-footer__social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
-                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-                  </svg>
+                  <i class="fa-solid fa-envelope site-footer__social-icon" aria-hidden="true"></i>
                 </a>
               </li>
             </ul>
@@ -199,14 +201,15 @@
         <p class="site-footer__copy">© 2026 Leonis. Tous droits réservés.</p>
         <nav class="site-footer__legal" aria-label="Liens légaux">
           <ul class="site-footer__legal-list">
-            <li><a class="site-footer__legal-link" href="#">Politique de confidentialité</a></li>
-            <li><a class="site-footer__legal-link" href="#">Conditions d'utilisation</a></li>
+            <li><a class="site-footer__legal-link" href="confidentialite.html">Politique de confidentialité</a></li>
+            <li><a class="site-footer__legal-link" href="conditions.html">Conditions d'utilisation</a></li>
           </ul>
         </nav>
       </div>
     </div>
   </footer>
 
+  <script type="module" src="js/cookie-consent.js"></script>
   <script type="module" src="animation.js"></script>
 </body>
 </html>

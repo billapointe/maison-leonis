@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<!-- Brouillon — page Services en cours. Non publiée : services.html affiche « en construction ». -->
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta
+    name="description"
+    content="Services Leonis — outils identitaires, communauté professionnelle, branding et sites web pour bâtir ta marque à ton image."
+  />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Services (brouillon) — Leonis</title>
+  <link rel="icon" href="Images/rondetoile.svg" type="image/svg+xml" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Luxurious+Script&family=Noto+Serif+Display:ital,wdth,wght@0,62.5..100,400..700;1,62.5..100,400..700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/nav-footer.css" />
+  <link rel="stylesheet" href="css/pages/services-draft.css" />
+</head>
+<body class="page-services">
+
+  <header class="site-header">
+    <a class="site-logo" href="home.html">Leonis</a>
+    <button
+      class="nav-toggle"
+      type="button"
+      aria-expanded="false"
+      aria-controls="site-nav"
+      aria-label="Ouvrir le menu"
+    >
+      <span class="nav-toggle__bars" aria-hidden="true">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </span>
+    </button>
+  </header>
+
+  <div class="nav-overlay" id="site-nav" aria-hidden="true">
+    <div class="nav-popup" role="dialog" aria-modal="true" aria-label="Menu principal">
+      <nav class="nav-popup__nav" aria-label="Navigation principale">
+        <ul class="nav-popup__list">
+          <li class="nav-popup__item">
+            <a class="nav-popup__link" href="home.html">Accueil</a>
+          </li>
+          <li class="nav-popup__item">
+            <a class="nav-popup__link" href="community.html">Communauté</a>
+          </li>
+          <li class="nav-popup__item">
+            <a class="nav-popup__link" href="faq.html">FAQ</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <main>
+    <section class="services-hero" aria-labelledby="services-hero-title">
+      <span class="services-hero__blob services-hero__blob--lime" aria-hidden="true"></span>
+      <span class="services-hero__blob services-hero__blob--pink" aria-hidden="true"></span>
+      <span class="services-hero__blob services-hero__blob--blue" aria-hidden="true"></span>
+
+      <div class="services-hero__inner">
+        <p class="services-hero__kicker" data-animate>NOS SERVICES</p>
+        <h1 class="services-hero__title" id="services-hero-title" data-animate>
+          De l'idée à la marque qui <em class="services-hero__title-em">te ressemble</em>
+        </h1>
+        <p class="services-hero__lead" data-animate>
+          Identité, site web, influence — on t'accompagne étape par étape, sans te perdre en chemin.
+        </p>
+      </div>
+    </section>
+
+    <section class="services-journey" aria-label="Parcours de services Leonis">
+      <div class="services-journey__inner">
+        <img
+          class="services-journey__graphic"
+          src="Images/avion.svg"
+          alt=""
+          width="960"
+          height="540"
+          aria-hidden="true"
+        />
+
+        <ol class="services-journey__stops">
+          <li class="services-journey__stop services-journey__stop--brand">
+            <span class="services-journey__label">Identité de marque</span>
+            <span class="services-journey__hint">you are here</span>
+          </li>
+          <li class="services-journey__stop services-journey__stop--web">
+            <span class="services-journey__label">Conception site web</span>
+          </li>
+          <li class="services-journey__stop services-journey__stop--influence">
+            <span class="services-journey__label">Marketing d'influence</span>
+          </li>
+          <li class="services-journey__stop services-journey__stop--scale">
+            <span class="services-journey__label">Scale With Freedom</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="services-packages" aria-label="Nos packages de services">
+      <article class="services-package" id="package-1" aria-labelledby="package-1-title">
+        <div class="services-package__inner">
+          <figure class="services-package__figure">
+            <img
+              class="services-package__image"
+              src="Images/package1.jpg"
+              alt="Mockup d'une stratégie de marque : livret valeurs et objectifs sur un bureau lumineux."
+              width="626"
+              height="426"
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
+          <div class="services-package__content">
+            <h2 class="services-package__number" id="package-1-title">Package #1</h2>
+            <h3 class="services-package__name">Prestation Petit Budget</h3>
+            <p class="services-package__desc">
+              Crée ta stratégie de marque <strong>OU</strong> ta direction artistique en
+              <strong>seulement 2 semaines</strong>. Clientèle idéale, messaging, positionnement,
+              piliers de contenu <strong>OU</strong> suite de logos, couleurs, typographies, guide
+              visuel, etc.
+            </p>
+            <p class="services-package__price">
+              <strong>Early Bird à 797€ TTC</strong>
+            </p>
+            <a class="services-package__btn" href="home.html#connect">Envoie nous un DM</a>
+          </div>
+        </div>
+      </article>
+
+      <article
+        class="services-package services-package--reverse services-package--tone-2"
+        id="package-2"
+        aria-labelledby="package-2-title"
+      >
+        <div class="services-package__inner">
+          <figure class="services-package__figure">
+            <img
+              class="services-package__image"
+              src="Images/package2.jpg"
+              alt="Mockup d'un livre de marque : charte graphique et moodboard avec échantillons de couleurs."
+              width="626"
+              height="427"
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
+          <div class="services-package__content">
+            <h2 class="services-package__number" id="package-2-title">Package #2</h2>
+            <h3 class="services-package__name">Identité de marque</h3>
+            <p class="services-package__desc">
+              Crée ta stratégie de marque <strong>ET</strong> ta direction artistique complète.
+              Obtiens tout l'univers de ta marque, du plan d'affaires jusqu'à l'identité visuelle en
+              seulement 4 semaines.
+            </p>
+            <p class="services-package__price">
+              <strong>Early Bird à 1297€ TTC</strong>
+            </p>
+            <a class="services-package__btn" href="mailto:team@maisonleonis.com?subject=Appel%20d%C3%A9couverte%20%E2%80%94%20Package%202">
+              Appel découverte
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article
+        class="services-package services-package--accent"
+        id="package-3"
+        aria-labelledby="package-3-title"
+      >
+        <div class="services-package__inner">
+          <figure class="services-package__figure">
+            <img
+              class="services-package__image"
+              src="Images/package3.jpg"
+              alt="Mockup d'un site web sur ordinateur et mobile, avec livrets de marque imprimés."
+              width="662"
+              height="468"
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
+          <div class="services-package__content">
+            <h2 class="services-package__number" id="package-3-title">Package #3</h2>
+            <h3 class="services-package__name">Expérience complète</h3>
+            <p class="services-package__desc">
+              Obtiens ton identité de marque complète ainsi que la création de ton site web pour une
+              expérience 360°. E-commerce ou site vitrine, on t'accompagne et te conseille selon les
+              besoins de ton entreprise.
+            </p>
+            <a
+              class="services-package__btn services-package__btn--inverse"
+              href="mailto:team@maisonleonis.com?subject=Devis%20%E2%80%94%20Package%203%20Exp%C3%A9rience%20compl%C3%A8te"
+            >
+              Obtenir un devis
+            </a>
+          </div>
+        </div>
+      </article>
+    </section>
+    <section class="services-journey" aria-label="Parcours de services Leonis">
+      <div class="services-journey__inner">
+        <img
+          class="services-journey__graphic"
+          src="Images/avion2.svg"
+          alt=""
+          width="960"
+          height="540"
+          aria-hidden="true"
+        />
+
+        <ol class="services-journey__stops">
+          <li class="services-journey__stop services-journey__stop--brand">
+            <span class="services-journey__label">Identité de marque</span>
+            <span class="services-journey__hint">you are here</span>
+          </li>
+          <li class="services-journey__stop services-journey__stop--web">
+            <span class="services-journey__label">Conception site web</span>
+          </li>
+          <li class="services-journey__stop services-journey__stop--influence">
+            <span class="services-journey__label">Marketing d'influence</span>
+          </li>
+          <li class="services-journey__stop services-journey__stop--scale">
+            <span class="services-journey__label">Scale With Freedom</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="services-packages" id="creation-web" aria-label="Options de création de site web">
+      <article class="services-package" id="option-1" aria-labelledby="option-1-title">
+        <div class="services-package__inner">
+          <figure class="services-package__figure">
+            <img
+              class="services-package__image"
+              src="Images/option1.jpg"
+              alt="Mockup d'un site vitrine sur ordinateur et mobile, avec livret de marque imprimé."
+              width="626"
+              height="426"
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
+          <div class="services-package__content">
+            <h2 class="services-package__number" id="option-1-title">Option #1</h2>
+            <h3 class="services-package__name">Site Vitrine</h3>
+            <p class="services-package__desc">
+              Présente ton activité avec élégance et intention. Un site pensé pour raconter ton histoire,
+              mettre en valeur tes services et convertir les visiteurs en clientes — pages clés,
+              storytelling aligné, formulaire de contact et design <strong>100&nbsp;% fidèle à ton
+              identité</strong>.
+            </p>
+            <p class="services-package__desc">
+              Idéal si tu veux une présence en ligne professionnelle, claire et mémorable, sans
+              complexité inutile.
+            </p>
+            <a
+              class="services-package__btn"
+              href="mailto:team@maisonleonis.com?subject=Devis%20%E2%80%94%20Site%20Vitrine"
+            >
+              Obtenir un devis
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article
+        class="services-package services-package--reverse services-package--tone-2"
+        id="option-2"
+        aria-labelledby="option-2-title"
+      >
+        <div class="services-package__inner">
+          <figure class="services-package__figure">
+            <img
+              class="services-package__image"
+              src="Images/option2.jpg"
+              alt="Mockup d'une boutique en ligne sur ordinateur et mobile, avec bouteilles de vin en arrière-plan."
+              width="626"
+              height="426"
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
+          <div class="services-package__content">
+            <h2 class="services-package__number" id="option-2-title">Option #2</h2>
+            <h3 class="services-package__name">E-Commerce</h3>
+            <p class="services-package__desc">
+              Vends en ligne avec un parcours d'achat fluide et une expérience qui inspire confiance.
+              Catalogue produits, paiement sécurisé, gestion des commandes et version mobile
+              impeccable — le tout intégré à <strong>l'univers visuel de ta marque</strong>.
+            </p>
+            <p class="services-package__desc">
+              Parfait si tu es prête à transformer ta visibilité en revenus, avec un site qui
+              travaille pour toi 24h/24.
+            </p>
+            <a
+              class="services-package__btn services-package__btn--inverse"
+              href="mailto:team@maisonleonis.com?subject=Devis%20%E2%80%94%20E-Commerce"
+            >
+              Obtenir un devis
+            </a>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__top">
+        <div class="site-footer__brand">
+          <a class="site-footer__logo" href="home.html">Leonis</a>
+          <p class="site-footer__tagline">
+            La vie est trop courte pour ne pas la bâtir à ton image.
+          </p>
+        </div>
+
+        <div class="site-footer__grid">
+          <nav class="site-footer__col site-footer__col--navigation" aria-label="Navigation du site">
+            <h2 class="site-footer__heading">Navigation</h2>
+            <ul class="site-footer__list">
+              <li><a class="site-footer__link" href="home.html">Accueil</a></li>
+              <li><a class="site-footer__link" href="community.html">Communauté</a></li>
+            </ul>
+          </nav>
+
+          <nav class="site-footer__col" aria-label="Ressources">
+            <h2 class="site-footer__heading">Ressources</h2>
+            <ul class="site-footer__list">
+              <li><a class="site-footer__link" href="faq.html">FAQ</a></li>
+              <li><a class="site-footer__link" href="garantie.html">Garantie</a></li>
+              <li><a class="site-footer__link" href="https://www.instagram.com/leonis.agency/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            </ul>
+          </nav>
+
+          <div class="site-footer__col">
+            <h2 class="site-footer__heading">Contact</h2>
+            <ul class="site-footer__list">
+              <li>
+                <a class="site-footer__link" href="mailto:team@maisonleonis.com">
+                  team@maisonleonis.com
+                </a>
+              </li>
+            </ul>
+
+            <ul class="site-footer__social" aria-label="Réseaux sociaux Leonis">
+              <li>
+                <a
+                  class="site-footer__social-link"
+                  href="https://www.instagram.com/leonis.agency/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram Leonis — @leonis.agency"
+                >
+                  <i class="fa-brands fa-instagram site-footer__social-icon" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="site-footer__social-link"
+                  href="https://www.skool.com/leonis-community-2881/about"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Communauté Leonis sur Skool"
+                >
+                  <i class="fa-solid fa-people-group site-footer__social-icon" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="site-footer__social-link"
+                  href="mailto:team@maisonleonis.com"
+                  aria-label="Écrire à team@maisonleonis.com"
+                >
+                  <i class="fa-solid fa-envelope site-footer__social-icon" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-footer__bottom">
+        <p class="site-footer__copy">© 2026 Leonis. Tous droits réservés.</p>
+        <nav class="site-footer__legal" aria-label="Liens légaux">
+          <ul class="site-footer__legal-list">
+            <li><a class="site-footer__legal-link" href="confidentialite.html">Politique de confidentialité</a></li>
+            <li><a class="site-footer__legal-link" href="conditions.html">Conditions d'utilisation</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="js/cookie-consent.js"></script>
+  <script type="module" src="animation.js"></script>
+</body>
+</html>
