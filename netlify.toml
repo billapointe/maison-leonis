@@ -5,6 +5,14 @@
   command = "node scripts/generate-auth-config.mjs"
   publish = "."
 
+# Site fermé : toutes les routes servent closed.html (statut 503).
+# Pour rouvrir le site, supprime ce bloc [[redirects]].
+[[redirects]]
+  from = "/*"
+  to = "/closed.html"
+  status = 503
+  force = true
+
 [[redirects]]
   from = "/"
   to = "/home.html"
